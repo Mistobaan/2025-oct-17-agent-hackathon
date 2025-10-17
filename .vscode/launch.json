@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "python": "./.venv/bin/python"
+        },
+        {
+            "name": "Python: Jupyter Notebook",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "jupyter",
+            "args": [
+                "notebook",
+                "--config=.jupyter/jupyter_notebook_config.py"
+            ],
+            "console": "integratedTerminal",
+            "python": "./.venv/bin/python"
+        }
+    ]
+}

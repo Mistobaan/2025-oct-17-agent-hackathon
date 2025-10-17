@@ -1,0 +1,34 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "88"],
+    "python.sortImports.args": ["--profile", "black"],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "jupyter.jupyterServerType": "local",
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.defaultKernel": "Python (markdown-formatter)",
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
+    "jupyter.debugging.enabled": true,
+    "jupyter.variableExplorerExclude": "module;function;builtin_function_or_method",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.showCellStatusBar": "visible",
+    "notebook.compactView": false,
+    "files.associations": {
+        "*.ipynb": "jupyter-notebook"
+    }
+}
