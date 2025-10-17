@@ -247,6 +247,7 @@ const TechRadar = () => {
             quadrantDetails={quadrantDetails}
             selectedQuadrantId={selectedQuadrantId}
             onHover={handleHover}
+            onSelectQuadrant={handleSelectQuadrant}
             size={CHART_SIZE}
           />
         </div>
