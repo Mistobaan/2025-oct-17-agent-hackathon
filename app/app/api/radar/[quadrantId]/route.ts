@@ -3,11 +3,14 @@ import type { RadarQuadrantDetail, RadarQuadrantResponse } from "@/app/types/rad
 import { radarDataset } from "../data";
 
 interface RouteParams {
-  params: { quadrantId: string };
+  params: Promise<{ quadrantId: string }>;
 }
 
-export function GET(_: Request, { params }: RouteParams): NextResponse<RadarQuadrantResponse | { message: string }> {
-  const { quadrantId } = params;
+export async function GET(
+  _: Request,
+  context: RouteParams,
+): Promise<NextResponse<RadarQuadrantResponse | { message: string }>> {
+  const { quadrantId } = await context.params;
   const normalizedId = quadrantId.toLowerCase();
   const quadrant = radarDataset.quadrants.find(
     (entry) => entry.id.toLowerCase() === normalizedId,
