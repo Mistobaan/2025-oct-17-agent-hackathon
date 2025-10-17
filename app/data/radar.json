@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Engineering Technology Radar",
+    "subtitle": "Q1 2025 Edition",
+    "published": "2025-01-15",
+    "summary": "A curated view of the engineering practices, tools, platforms, and languages that matter most to our delivery teams."
+  },
+  "rings": [
+    { "id": "adopt", "name": "Adopt", "description": "Proven techniques we leverage on the majority of projects.", "color": "#4caf50" },
+    { "id": "trial", "name": "Trial", "description": "Promising options we evaluate with limited scope.", "color": "#2196f3" },
+    { "id": "assess", "name": "Assess", "description": "Technologies worth watching and prototyping.", "color": "#ff9800" },
+    { "id": "hold", "name": "Hold", "description": "Approaches we deliberately avoid for now.", "color": "#f44336" }
+  ],
+  "quadrants": [
+    {
+      "id": "techniques",
+      "name": "Techniques",
+      "order": 0,
+      "startAngle": 90,
+      "description": "Delivery and collaboration practices that influence how we build software.",
+      "color": "#0f766e",
+      "blips": [
+        {
+          "id": "blip-001",
+          "sequence": 1,
+          "name": "Outcome-oriented roadmaps",
+          "ringId": "adopt",
+          "movement": "steady",
+          "isNew": false,
+          "description": "Roadmaps expressed as measurable outcomes keep teams aligned without over-prescribing solutions.",
+          "link": "https://example.com/outcome-roadmaps"
+        },
+        {
+          "id": "blip-002",
+          "sequence": 2,
+          "name": "Contract testing at scale",
+          "ringId": "trial",
+          "movement": "up",
+          "isNew": true,
+          "description": "Teams are expanding consumer-driven contracts across business domains to reduce integration failures.",
+          "link": "https://example.com/contract-testing"
+        },
+        {
+          "id": "blip-003",
+          "sequence": 3,
+          "name": "AI-generated release notes",
+          "ringId": "assess",
+          "movement": "up",
+          "isNew": true,
+          "description": "We are experimenting with language models to summarize change logs for stakeholders.",
+          "link": "https://example.com/ai-release-notes"
+        },
+        {
+          "id": "blip-004",
+          "sequence": 4,
+          "name": "Manual regression sign-off",
+          "ringId": "hold",
+          "movement": "down",
+          "isNew": false,
+          "description": "High-touch release gates slow feedback loops; replace with automated quality signals whenever possible.",
+          "link": "https://example.com/manual-regression"
+        }
+      ]
+    },
+    {
+      "id": "platforms",
+      "name": "Platforms",
+      "order": 1,
+      "startAngle": 0,
+      "description": "Runtime and delivery platforms that underpin our products.",
+      "color": "#3b82f6",
+      "blips": [
+        {
+          "id": "blip-005",
+          "sequence": 5,
+          "name": "Internal developer portal",
+          "ringId": "adopt",
+          "movement": "steady",
+          "isNew": false,
+          "description": "A golden path portal centralizes service templates, documentation, and paved road automation.",
+          "link": "https://example.com/developer-portal"
+        },
+        {
+          "id": "blip-006",
+          "sequence": 6,
+          "name": "Edge runtime observability",
+          "ringId": "trial",
+          "movement": "up",
+          "isNew": true,
+          "description": "Distributed tracing for edge workers gives us deeper visibility into CDN execution.",
+          "link": "https://example.com/edge-observability"
+        },
+        {
+          "id": "blip-007",
+          "sequence": 7,
+          "name": "Vector databases as a service",
+          "ringId": "assess",
+          "movement": "steady",
+          "isNew": true,
+          "description": "Hosted vector stores simplify semantic retrieval but add vendor lock-in considerations.",
+          "link": "https://example.com/vector-database"
+        },
+        {
+          "id": "blip-008",
+          "sequence": 8,
+          "name": "Self-managed Kubernetes clusters",
+          "ringId": "hold",
+          "movement": "down",
+          "isNew": false,
+          "description": "We prefer managed control planes to focus talent on product differentiation instead of plumbing.",
+          "link": "https://example.com/self-managed-k8s"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "order": 2,
+      "startAngle": -90,
+      "description": "Developer tools and automation that accelerate delivery.",
+      "color": "#a855f7",
+      "blips": [
+        {
+          "id": "blip-009",
+          "sequence": 9,
+          "name": "Shared UI kits",
+          "ringId": "adopt",
+          "movement": "steady",
+          "isNew": false,
+          "description": "Well-governed component libraries maintain UX consistency across squads.",
+          "link": "https://example.com/shared-ui"
+        },
+        {
+          "id": "blip-010",
+          "sequence": 10,
+          "name": "Spec-driven API linting",
+          "ringId": "trial",
+          "movement": "up",
+          "isNew": true,
+          "description": "Automated OpenAPI linting in CI enforces consistent API ergonomics.",
+          "link": "https://example.com/api-linting"
+        },
+        {
+          "id": "blip-011",
+          "sequence": 11,
+          "name": "Generative test authoring",
+          "ringId": "assess",
+          "movement": "steady",
+          "isNew": true,
+          "description": "We are exploring copilots that draft regression scenarios for reviewers to refine.",
+          "link": "https://example.com/generative-tests"
+        },
+        {
+          "id": "blip-012",
+          "sequence": 12,
+          "name": "Monolithic CI pipelines",
+          "ringId": "hold",
+          "movement": "down",
+          "isNew": false,
+          "description": "Long-running linear pipelines slow feedback and impede trunk-based development.",
+          "link": "https://example.com/monolithic-ci"
+        }
+      ]
+    },
+    {
+      "id": "languages-frameworks",
+      "name": "Languages & Frameworks",
+      "order": 3,
+      "startAngle": -180,
+      "description": "Programming languages and frameworks our teams rely on.",
+      "color": "#f97316",
+      "blips": [
+        {
+          "id": "blip-013",
+          "sequence": 13,
+          "name": "TypeScript 5.x",
+          "ringId": "adopt",
+          "movement": "steady",
+          "isNew": false,
+          "description": "Type-safe tooling combined with excellent DX keeps TypeScript as our default web language.",
+          "link": "https://example.com/typescript-5"
+        },
+        {
+          "id": "blip-014",
+          "sequence": 14,
+          "name": "Rust for backend services",
+          "ringId": "trial",
+          "movement": "up",
+          "isNew": true,
+          "description": "Select teams are piloting Rust services for compute-intensive workloads.",
+          "link": "https://example.com/rust-backend"
+        },
+        {
+          "id": "blip-015",
+          "sequence": 15,
+          "name": "WASM UI frameworks",
+          "ringId": "assess",
+          "movement": "steady",
+          "isNew": true,
+          "description": "WebAssembly-based UI stacks remain niche but intriguing for specific offline scenarios.",
+          "link": "https://example.com/wasm-ui"
+        },
+        {
+          "id": "blip-016",
+          "sequence": 16,
+          "name": "Server-side templating only",
+          "ringId": "hold",
+          "movement": "down",
+          "isNew": false,
+          "description": "Modern interactive experiences benefit from progressive enhancement beyond static templates.",
+          "link": "https://example.com/server-side-only"
+        }
+      ]
+    }
+  ]
+}
